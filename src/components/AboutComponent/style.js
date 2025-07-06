@@ -21,7 +21,7 @@ export const AboutContent = styled.div`
   width: 100%;
   height: auto;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 2rem;
 `;
 
@@ -46,7 +46,16 @@ export const AboutText = styled.p`
   width: 60%;
   font-size: 1.5rem;
   color: ${({ theme }) => theme.textPrimary};
-  text-align: justify;
+  margin: 0;
+  span {
+    background: ${({ theme }) =>
+      `linear-gradient(to right, ${theme.accentPrimary}, ${theme.accentSecondary}, ${theme.accentTertiary})`};
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+  }
 `;
 
 export const ButtonWrpr = styled.div`

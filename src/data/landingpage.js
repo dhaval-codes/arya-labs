@@ -1,0 +1,3 @@
+export const AboutData = `
+At <span>Arya Labs</span>, we are a team of passionate technologists and innovators with years of experience in the software industry. With a strong foundation from <span>IIT Madras</span>, our diverse expertise drives us to deliver high-quality solutions. <span>We are dedicated to bridging the gap between business needs, innovative products, and seamless AI integrations</span>, empowering organizations to unlock new possibilities. We are committed to excellence, continuous learning, and building a collaborative environment where creativity and technology come together to solve real-world problems.
+`;

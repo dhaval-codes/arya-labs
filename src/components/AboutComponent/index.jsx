@@ -9,6 +9,7 @@ import {
   ButtonWrpr,
 } from "./style";
 import { PrimaryButton } from "../Buttons";
+import { AboutData } from "../../data/landingpage";
 
 function AboutComponent() {
   return (
@@ -21,17 +22,7 @@ function AboutComponent() {
             alt="About"
           />
         </AboutImageWrpr>
-        <AboutText>
-          At Arya Labs, we operate at the intersection of design thinking and
-          data science, redefining how people engage with digital technologies.
-          Our diverse team of designers, engineers, and data scientists brings
-          deep expertise in crafting purposeful, innovative solutions. We focus
-          on understanding real human behavior—how users think, feel, and
-          interact—and embed that understanding into every stage of product
-          design and development. From concept to deployment, we build
-          intelligent web and mobile applications powered by AI, tailored to
-          create meaningful user experiences.
-        </AboutText>
+        <AboutText dangerouslySetInnerHTML={{ __html: AboutData }} />
       </AboutContent>
       <ButtonWrpr>
         <PrimaryButton
