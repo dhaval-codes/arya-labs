@@ -7,7 +7,10 @@ import {
   HeroTitle,
 } from "./style";
 import ScrambleTextLoop from "../ScrambledText";
-import MatrixDotEarth from "../MatrixEarth";
+// import MatrixDotEarth from "../MatrixEarth";
+import dynamic from "next/dynamic";
+
+const MatrixDotEarth = dynamic(() => import("../MatrixEarth"), { ssr: false });
 
 const scrambledTextsData = [
   "Artificial Intelligence",
