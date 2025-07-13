@@ -9,7 +9,7 @@ import {
 
 function ExpandedBox({ data }) {
   return (
-    <ExpandedBoxWrpr bgImage={data.image}>
+    <ExpandedBoxWrpr bgimage={data.image}>
       <ExpandedTextWrpr>
         <ExpandedTextHeader>{data.label}</ExpandedTextHeader>
         <ExpandedTextDescription>{data.description}</ExpandedTextDescription>

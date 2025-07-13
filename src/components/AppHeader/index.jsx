@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { HeaderWrpr, Logo, NavOption, NavOptionsWrpr } from "./style";
+import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
+import { useTheme } from "@/utils/themeContext";
 
 const NavOptions = [
   { label: "home", endpoint: "/", type: "route" },
@@ -10,6 +12,8 @@ const NavOptions = [
 ];
 
 function AppHeader() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <HeaderWrpr>
       <Logo>Arya Labs</Logo>
@@ -17,6 +21,13 @@ function AppHeader() {
         {NavOptions.map((option) => (
           <NavOption key={option.label}>{option.label}</NavOption>
         ))}
+        <div onClick={toggleTheme} style={{ cursor: "pointer" }}>
+          {theme === "light" ? (
+            <MdOutlineDarkMode size={24} />
+          ) : (
+            <MdOutlineLightMode size={24} color="#fff" />
+          )}
+        </div>
       </NavOptionsWrpr>
     </HeaderWrpr>
   );

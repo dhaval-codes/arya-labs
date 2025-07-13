@@ -2,6 +2,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { ThemeProviderContext } from "../utils/themeContext.jsx";
 import AppHeader from "../components/AppHeader/index.jsx";
+import FooterComponent from "@/components/FooterComponent";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <ThemeProviderContext>
           <AppHeader />
           {children}
+          <FooterComponent />
         </ThemeProviderContext>
       </body>
     </html>

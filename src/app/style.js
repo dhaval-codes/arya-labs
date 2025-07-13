@@ -8,4 +8,5 @@ export const PageWrpr = styled.div`
   align-items: center;
   justify-content: center;
   background-color: ${({ theme }) => theme.backgroundPrimary};
+  gap: 2rem;
 `;

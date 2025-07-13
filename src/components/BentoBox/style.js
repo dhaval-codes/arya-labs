@@ -61,8 +61,8 @@ export const Box = styled.div`
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Animation when grid position changes - FIXED with css helper */
-  ${({ isTransitioning }) =>
-    isTransitioning &&
+  ${({ istransitioning }) =>
+    istransitioning &&
     css`
       animation: ${smoothGridTransition} 0.6s ease-out;
     `}
@@ -81,13 +81,13 @@ export const Box = styled.div`
         `}
 
   /* Grid positioning with transition */
-  grid-area: ${({ gridArea }) => gridArea.desktop};
+  grid-area: ${({ gridarea }) => gridarea.desktop};
 
   @media (max-width: 900px) {
-    grid-area: ${({ gridArea }) => gridArea.tablet};
+    grid-area: ${({ gridarea }) => gridarea.tablet};
   }
 
   @media (max-width: 600px) {
-    grid-area: ${({ gridArea }) => gridArea.mobile};
+    grid-area: ${({ gridarea }) => gridarea.mobile};
   }
 `;

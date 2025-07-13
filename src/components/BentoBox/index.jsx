@@ -119,9 +119,9 @@ const BentoBox = ({ items }) => {
           <Box
             key={idx}
             expanded={expandedIdx === idx}
-            isTransitioning={isTransitioning}
+            istransitioning={isTransitioning}
             onClick={() => handleBoxClick(idx)}
-            gridArea={{
+            gridarea={{
               desktop: layouts.desktop[idx],
               tablet: layouts.tablet[idx],
               mobile: layouts.mobile[idx],
