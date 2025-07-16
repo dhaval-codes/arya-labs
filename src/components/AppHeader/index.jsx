@@ -3,6 +3,7 @@ import React from "react";
 import { HeaderWrpr, Logo, NavOption, NavOptionsWrpr } from "./style";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { useTheme } from "@/utils/themeContext";
+import { useRouter } from "next/navigation";
 
 const NavOptions = [
   { label: "home", endpoint: "/", type: "route" },
@@ -13,13 +14,19 @@ const NavOptions = [
 
 function AppHeader() {
   const { theme, toggleTheme } = useTheme();
+  const router = useRouter();
 
   return (
     <HeaderWrpr>
       <Logo>Arya Labs</Logo>
       <NavOptionsWrpr>
         {NavOptions.map((option) => (
-          <NavOption key={option.label}>{option.label}</NavOption>
+          <NavOption
+            key={option.label}
+            onClick={() => router.push(option.endpoint)}
+          >
+            {option.label}
+          </NavOption>
         ))}
         <div onClick={toggleTheme} style={{ cursor: "pointer" }}>
           {theme === "light" ? (
