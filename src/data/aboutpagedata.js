@@ -2,14 +2,12 @@ export const AboutPageData = [
   {
     type: "both",
     leftside: {
-      heading: "",
-      text: "We translate ambiguity into architecture, and architecture into action. From raw data to real decisions, we don’t just build software. We build thinking systems.",
+      heading:
+        "We translate ambiguity into architecture, and architecture into action. From raw data to real decisions, we don’t just build software. We build thinking systems.",
+      text: "",
     },
     rightside: {
-      paragraphone:
-        "True thinking systems serves as the essential foundation for today's digital infrastructure. Unlike a few years ago, real-time data now underpins every facet of business operations, including strategy, customer experience, service excellence, security, compliance, and operations. Organizations that effectively leverage this data-driven, machine-thought ecosystem tend to achieve higher efficiency and profitability.",
-      paragraphtwo:
-        "Arya Labs applies the classic design process on data, to create products that deliver business impact to our clients and enable them to lead through innovation",
+      text: "True thinking systems serves as the essential foundation for today's digital infrastructure. Unlike a few years ago, real-time data now underpins every facet of business operations, including strategy, customer experience, service excellence, security, compliance, and operations. Organizations that effectively leverage this data-driven, machine-thought ecosystem tend to achieve higher efficiency and profitability. Arya Labs applies the classic design process on data, to create products that deliver business impact to our clients and enable them to lead through innovation",
     },
   },
   {
