@@ -39,3 +39,17 @@ export const AboutPageData = [
     },
   },
 ];
+
+export const IndustryExport = [
+  "Telecom",
+  "Healthcare",
+  "Retail",
+  "Finance",
+  "Personal Branding",
+  "Automotive",
+  "Tech Platforms",
+  "KPI Dashboards",
+  "Social Responsibility",
+  "Logistics",
+  "Compliance",
+];

@@ -8,10 +8,13 @@ import {
   AboutSubHeader,
   DataHeading,
   DataText,
+  IndustryText,
+  TextOverlay,
   WorldMapSectionWrpr,
+  WorldMapWrpr,
 } from "./style";
 
-import { AboutPageData } from "@/data/aboutpagedata";
+import { AboutPageData, IndustryExport } from "@/data/aboutpagedata";
 import MatrixDotMap from "@/components/WorldMap";
 import AboutBox from "@/components/AboutBoxes";
 
@@ -31,7 +34,14 @@ function AboutPage() {
       <WorldMapSectionWrpr>
         <DataText>Our team have delivered over</DataText>
         <DataHeading>10+ products across major industry sectors</DataHeading>
-        <MatrixDotMap />
+        <WorldMapWrpr>
+          <MatrixDotMap />
+          <TextOverlay>
+            {IndustryExport.map((data, index) => {
+              return <IndustryText key={index}>{data}</IndustryText>;
+            })}
+          </TextOverlay>
+        </WorldMapWrpr>
       </WorldMapSectionWrpr>
     </PageWrpr>
   );

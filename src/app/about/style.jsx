@@ -64,3 +64,44 @@ export const WorldMapSectionWrpr = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
+export const WorldMapTextWrpr = styled.div`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+`;
+
+export const WorldMapWrpr = styled.div`
+  position: relative;
+`;
+
+export const TextOverlay = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem;
+  gap: 3rem;
+  z-index: 2; /* Make sure it's above the MatrixDotMap */
+  text-align: center;
+`;
+
+export const IndustryText = styled.span`
+  font-size: 2rem;
+  font-weight: 600;
+  background: ${({ theme }) =>
+    `linear-gradient(to right, ${theme.accentPrimary}, ${theme.accentSecondary}, ${theme.accentTertiary})`};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  z-index: 10;
+`;
